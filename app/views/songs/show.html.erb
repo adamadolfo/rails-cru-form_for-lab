@@ -1,9 +1,8 @@
 <h3><div><%= @song.name %></div></h3>
-<div><%= @song.artist.name %></div>
-<div><%= @song.genre.name %></div>
+<div><%= link_to @song.artist.name, artist_path(@song.artist.id) %></div>
+<div><%= link_to @song.genre.name,genre_path(@song.genre.id) %></div>
 
 
-And for the song show page you need to have it display each of the song's genre and artist, 
-and link to the respective genre and artist show pages
 
 
+ 
